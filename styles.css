@@ -34,7 +34,6 @@
 }
 
 .hero {
-    top: 0;
     height:300px;
     font-family: var(--font-family);
     font-weight: var(--font-weight);
@@ -43,10 +42,10 @@
     background-color: rgb(59 130 246);
     width: 100%;
     text-align: center;
-    position: absolute;
     align-content: center;
     box-shadow:0 10px 0 0 #111214;
     outline: 5px solid black;
+    margin-bottom: 10px;
 }
 
 .badge {
@@ -121,7 +120,7 @@ body {
   margin: 0;
   display: flex;
   font-family: Inter,Inter Fallback;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
   background: var(--background)
@@ -137,7 +136,7 @@ body {
 
 .grid {
   display: flex;
-  margin: 16px 0;
+  margin: 16px;
 }
 
 .colorful-button {
@@ -146,7 +145,6 @@ body {
     font-size: var(--font-size);
     font-optical-sizing: auto;
     outline: none;
-    position: relative;
     cursor: pointer;
     border: none;
     display: table;
@@ -183,17 +181,16 @@ body {
 }
 
 .modal {
-    display:none;
     z-index:999;
-    height:300px;
+    display:none;
+    width: 80%;
+    height: 80%;
+    margin:auto;
     font-family: var(--font-family);
     font-weight: var(--font-weight);
     font-size: var(--font-size);
     color: var(--text-secondary);
     background-color: rgb(255, 255, 255);
-    width: 80%;
-    height: 80%;
-    position: absolute;
     box-shadow:0 10px 0 0 #111214;
     outline: 5px solid black;
     padding: 2rem;
@@ -202,9 +199,9 @@ body {
 .modal-background {
     display:none;
     z-index: 998;
-    background-color: #000;
-    opacity: 40%;
+    background-color: #00000042;
     width:100%;
     height:100%;
     position: absolute;
+    align-content: center;
 }
