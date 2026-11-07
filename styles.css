@@ -93,6 +93,21 @@
     z-index: 1;
 }
 
+h1 {
+    font-family: var(--font-family);
+    font-weight: var(--font-weight);
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    text-align: center;
+}
+
+content {
+    font-family: var(--font-family);
+    font-weight: normal;
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+}
+
 title {
     font-size: large;
 }
@@ -168,6 +183,7 @@ body {
 }
 
 .modal {
+    display:none;
     z-index:999;
     height:300px;
     font-family: var(--font-family);
@@ -177,15 +193,18 @@ body {
     background-color: rgb(255, 255, 255);
     width: 80%;
     height: 80%;
-    text-align: center;
     position: absolute;
-    align-content: center;
     box-shadow:0 10px 0 0 #111214;
     outline: 5px solid black;
+    padding: 2rem;
 }
 
 .modal-background {
+    display:none;
     z-index: 998;
     background-color: #000;
     opacity: 40%;
+    width:100%;
+    height:100%;
+    position: absolute;
 }
