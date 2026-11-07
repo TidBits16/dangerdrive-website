@@ -1,72 +1,91 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <!--
+
+<head>
+    <!--
         <meta name="veiwport" content="width=device-width, initial-scale=1.0">
     -->
-        <title>DangerDrive Website</title>
-        <link rel="stylesheet" href="styles.css"> 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-        <script defer src="script.js"></script>
-    </head>
-    <!--
+    <title>DangerDrive Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <script defer src="script.js"></script>
+</head>
+<!--
     <header class="header">
         Here's some cool text!
     </header>
     -->
-    <body>
-        <div class="modal-background" id="modal-background">
-            <div class="modal" id="modal">
-            <h1>why does human made matter?</h1>
-            <content>think of it this way: imagine you went onto google images and searched up "Vincent van Gogh - The Starry Night" then, you downloaded the first image you saw and uploaded it to Shutterstock under your own name. obviously, that would be illegal. you are not Vincent van Gogh and you do not own the rights to that image.
-            <br>   
-            second scenario, you take a peak at </content>
 
-                    <h1>what does "human made" mean?</h1>
-            <content>simple! no "ai" was used in the creation of this site.each character was typed by hand. if i ever had a problem or wasn't sure how to do something, i would look it up or ask for help.</content>
+<body>
+    <div class="modal-background" id="modal-background">
+        <div class="modal" id="modal">
+            <h1>why does human made matter?</h1>
+            <content>think of it this way: imagine you went onto google images and searched up "Vincent van Gogh - The
+                Starry Night" then, you downloaded the first image you saw and uploaded it to Shutterstock under your
+                own name. obviously, that would be illegal. you are not Vincent van Gogh and you do not own the rights
+                to that image.
+                <br>
+                second scenario, you take a peak at
+            </content>
+
+            <h1>what does "human made" mean?</h1>
+            <content>simple! no "ai" was used in the creation of this site.each character was typed by hand. if i ever
+                had a problem or wasn't sure how to do something, i would look it up or ask for help.</content>
             <br>
         </div>
+    </div>
+    <div class="hero">
+        <div class="badge" id="badge">
+            ★ HUMAN MADE ★
         </div>
-        <div class="hero">
-            <div class="badge" id="badge">
-                ★  HUMAN MADE ★
-            </div>
-            <div class="title m1">
-                DangerDrive.com
-            </div>
-            <div class="subtitle m1">
-                Quick links to all hosted services on DangerDrive.
-            </div>
+        <div class="title m1">
+            DangerDrive.com
         </div>
-            <div class="grid">
-                    <button class="colorful-button jellyfin" href="https://jelly.dangerdrive.com">
-                        <div class="wrapper">
-                        <img src="icons/jellyfin.svg" alt="Jellyfin Icon" class="logo">
-                        <div class="label">Jellyfin</div>
-                    </button>
-
-                    <button class="colorful-button cloudstorage">
-                        <div class="wrapper">
-                        <img src="icons/nextcloud.svg" alt="Nextcloud Icon" class="logo">
-                        <div class="label">Cloud Storage</div>
-                    </button>
+        <div class="subtitle m1">
+            Quick links to all hosted services on DangerDrive.
+        </div>
+    </div>
+    <div class="grid">
+        <a href="https://jelly.dangerdrive.com/">
+            <button class="colorful-button jellyfin">
+                <div class="wrapper">
+                    <img src="icons/jellyfin.svg" alt="Jellyfin Icon" class="logo">
+                    <div class="label">Jellyfin</div>
+                    <div class="link-text">jelly.dangerdrive.com</div>
+            </button>
+        </a>
+        <a href="https://cloud.dangerdrive.com">
+            <button class="colorful-button cloudstorage">
+                <div class="wrapper">
+                    <img src="icons/nextcloud.svg" alt="Nextcloud Icon" class="logo">
+                    <div class="label">Cloud Storage</div>
+                    <div class="link-text">cloud.dangerdrive.com</div>
+            </button>
+        </a>
+    </div>
+    <div class="grid">
+        <a href="https://audiomuse.dangerdrive.com/">
+            <button class="colorful-button audiomuse">
+                <div class="wrapper">
+                    <img src="icons/audiomuse.svg" alt="Audio Muse Icon" class="logo">
+                    <div class="label">Audio Muse</div>
+                    <div class="link-text">audiomuse.dangerdrive.com</div>
+            </button>
+        </a>
+        <a href="https://nas.dangerdrive.com/">
+            <button class="colorful-button nas">
+                <div class="wrapper">
+                    <img src="icons/truenas.svg" alt="NAS Icon" class="logo">
+                    <div class="label">NAS Management</div>
+                    <div class="link-text">nas.dangerdrive.com</div>
                 </div>
-                <div class="grid">
-                    <button class="colorful-button audiomuse">
-                        <div class="wrapper">
-                        <img src="icons/audiomuse.svg" alt="Audio Muse Icon" class="logo">
-                        <div class="label">Audio Muse</div>
-                    </button>
+            </button>
+        </a>
+    </div>
+</body>
 
-                    <button class="colorful-button nas">
-                        <div class="wrapper">
-                        <img src="icons/truenas.svg" alt="NAS Icon" class="logo">
-                        <div class="label">NAS Management</div>
-                    </div>
-                </button>
-            </div>
-    </body>
 </html>
-
