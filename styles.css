@@ -53,12 +53,18 @@
     bottom: 0;
     margin:auto;
     font-size: 1.2rem;
+    cursor: pointer;
     color: var(--text-secondary);
     background-color: #ffffff;
     max-width:300px;
     padding: 10px;
     text-align: center;
     rotate: -3deg;
+}
+
+.badge:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
 }
 
 .jellyfin {
@@ -159,4 +165,27 @@ body {
     margin:auto;
     max-width: 60%;
     opacity: 60%;
+}
+
+.modal {
+    z-index:999;
+    height:300px;
+    font-family: var(--font-family);
+    font-weight: var(--font-weight);
+    font-size: var(--font-size);
+    color: var(--text-secondary);
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+    height: 80%;
+    text-align: center;
+    position: absolute;
+    align-content: center;
+    box-shadow:0 10px 0 0 #111214;
+    outline: 5px solid black;
+}
+
+.modal-background {
+    z-index: 998;
+    background-color: #000;
+    opacity: 40%;
 }
